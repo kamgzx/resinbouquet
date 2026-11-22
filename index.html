@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resin Bouquet | Wedding Flower Preservation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --cream: #faf7f2;
+      --blush: #f5e6e0;
+      --rose: #d4a5a5;
+      --sage: #8a9a7b;
+      --charcoal: #2c2c2c;
+      --gold: #c9a87c;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--cream);
+      color: var(--charcoal);
+      line-height: 1.7;
+    }
+    h1, h2, h3 { font-family: 'Cormorant Garamond', serif; font-weight: 500; }
+    header {
+      padding: 2rem 6vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: white;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.04);
+    }
+    .logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.8rem;
+      letter-spacing: 3px;
+      color: var(--charcoal);
+    }
+    .logo span { display: block; font-size: 0.75rem; letter-spacing: 2px; color: var(--sage); font-family: 'Outfit'; margin-top: -4px; }
+    nav a {
+      margin-left: 2rem;
+      text-decoration: none;
+      color: var(--charcoal);
+      font-size: 0.95rem;
+      letter-spacing: 0.5px;
+    }
+    .hero {
+      height: 92vh;
+      background: linear-gradient(rgba(250,247,242,0.85), rgba(250,247,242,0.9)),
+                  url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?q=80&w=2070') center/cover;
+      display: flex;
+      align-items: center;
+      padding: 0 8vw;
+    }
+    .hero-content { max-width: 650px; }
+    .hero h1 {
+      font-size: 4.2rem;
+      line-height: 1.1;
+      margin-bottom: 1.2rem;
+    }
+    .hero p { font-size: 1.25rem; margin-bottom: 2rem; color: #444; }
+    .btn {
+      display: inline-block;
+      background: var(--charcoal);
+      color: white;
+      padding: 1rem 2.2rem;
+      text-decoration: none;
+      letter-spacing: 1px;
+      font-size: 0.9rem;
+      transition: 0.3s;
+    }
+    .btn:hover { background: var(--gold); }
+    section { padding: 6rem 8vw; }
+    .section-title {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 3rem;
+    }
+    .how-it-works {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 3rem;
+    }
+    .step {
+      text-align: center;
+    }
+    .step-number {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.5rem;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2.5rem;
+    }
+    .product {
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+    .product:hover { transform: translateY(-8px); }
+    .product img { width: 100%; height: 280px; object-fit: cover; }
+    .product-info { padding: 1.5rem; }
+    .product h3 { font-size: 1.5rem; margin-bottom: 0.4rem; }
+    .price { color: var(--sage); font-weight: 500; margin: 0.5rem 0; }
+    .cta-banner {
+      background: var(--blush);
+      text-align: center;
+      padding: 5rem 2rem;
+    }
+    footer {
+      background: var(--charcoal);
+      color: white;
+      text-align: center;
+      padding: 3rem;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2.8rem; }
+      header { flex-direction: column; gap: 1rem; }
+      nav a { margin: 0 0.8rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      RESIN BOUQUET
+      <span>WEDDING FLOWER PRESERVATION</span>
+    </div>
+    <nav>
+      <a href="#how">How It Works</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Book</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Preserve Your Cherished Flowers and Memories</h1>
+      <p>Handcrafted pressed flower frames and resin keepsakes made from your wedding bouquet and special occasion flowers. Serving Vancouver and Canada-wide.</p>
+      <a href="#products" class="btn">View Our Products</a>
+    </div>
+  </section>
+
+  <section id="how">
+    <h2 class="section-title">How It Works</h2>
+    <div class="how-it-works">
+      <div class="step">
+        <div class="step-number">01</div>
+        <h3>Reserve Your Date</h3>
+        <p>Contact us to check availability and secure your spot with a deposit. Limited weekly slots due to handcrafted nature.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">02</div>
+        <h3>Send Your Bouquet</h3>
+        <p>Local drop-off in Surrey or Canada-wide shipping. We provide clear instructions for safe packing.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">03</div>
+        <h3>Design Approval</h3>
+        <p>Flowers are carefully dried and a custom design is created and emailed for your approval.</p>
+      </div>
+      <div class="step">
+        <div class="step-number">04</div>
+        <h3>Receive Your Keepsake</h3>
+        <p>Your flowers are preserved in resin, cured, polished, and ready to display forever.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="products" style="background: white;">
+    <h2 class="section-title">Our Keepsakes</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?q=80&w=800" alt="Pressed Flower Frame">
+        <div class="product-info">
+          <h3>Pressed Flower Frame</h3>
+          <p>12 × 16 inch</p>
+          <div class="price">$450</div>
+          <p>Timeless pressed floral art on a black or white background.</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?q=80&w=800" alt="3D Resin Frame">
+        <div class="product-info">
+          <h3>3D Resin Flower Frame</h3>
+          <p>11 × 14 inch</p>
+          <div class="price">$450</div>
+          <p>Lush, sculptural arrangement with depth and texture.</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1468327768560-75b778cbb551?q=80&w=800" alt="Hexagon Keepsake">
+        <div class="product-info">
+          <h3>Hexagon Keepsake</h3>
+          <p>7 inch</p>
+          <div class="price">$400</div>
+          <p>Elegant modern shape, perfect for display.</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=800" alt="Coasters">
+        <div class="product-info">
+          <h3>Resin Coasters</h3>
+          <p>Set of 6</p>
+          <div class="price">$185 – $225</div>
+          <p>Functional and beautiful with pressed petals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner" id="contact">
+    <h2 class="section-title">Save Your Date</h2>
+    <p style="max-width: 600px; margin: 0 auto 2rem; font-size: 1.1rem;">
+      Because each piece is handcrafted, we only accept a limited number of preservations each week. Book early to secure your date.
+    </p>
+    <a href="mailto:hello@resinbouquet.com" class="btn">Check Availability</a>
+  </section>
+
+  <footer>
+    <div class="logo" style="color: white; margin-bottom: 1rem;">RESIN BOUQUET</div>
+    <p>Wedding Flower Preservation · Greater Vancouver, Canada</p>
+    <p style="margin-top: 1rem; opacity: 0.7;">Serving Canada-wide · Handcrafted with love</p>
+  </footer>
+
+</body>
+</html>
